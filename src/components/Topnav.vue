@@ -1,11 +1,13 @@
 <template>
   <div class="topnav">
-    <div class="logo">LOGO</div>
+    <div class="logo">ZCore UI</div>
     <ul class="menu">
       <li>菜单1</li>
       <li>菜单2</li>
     </ul>
-    <span class="toggleAside" @click="toggleMenu"></span>
+    <span class="toggleAside" @click="toggleMenu">
+      Tab
+    </span>
   </div>
 </template>
 <script lang="ts">
@@ -22,7 +24,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 .topnav {
-  background: pink;
+  background: #ffffff;
   display: flex;
   padding: 16px;
   position: fixed;
@@ -32,7 +34,11 @@ export default {
   z-index: 10;
   justify-content: center;
   align-items: center;
+  box-shadow: 0 0px 5px 0 rgba($color: #333, $alpha: .4);
   > .logo {
+    font-weight: 700;
+    font-size: 24px;
+    color: #2c3e50;
     max-width: 6em;
     margin-right: auto;
   }
@@ -47,7 +53,6 @@ export default {
   > .toggleAside {
     width: 24px;
     height: 24px;
-    background: red;
     position: absolute;
     left: 16px;
     top: 50%;
