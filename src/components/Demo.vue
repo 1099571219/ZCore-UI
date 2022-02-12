@@ -1,43 +1,51 @@
 <template>
-    <div class="demo">
-      <h2>{{component.__sourceCodeTitle}}</h2>
-      <div class="demo-component">
-        <component :is="component" />
-      </div>
-      <div class="demo-actions">
-        <Button @click="toggleCode">查看代码</Button>
-      </div>
-      <div v-if="codeVisible" class="demo-code">
-        <pre class="language-html" v-html="html"/>
-      </div>
+  <div class="demo">
+    <h2>{{ component.__sourceCodeTitle }}</h2>
+    <div class="demo-component">
+      <component :is="component" />
     </div>
+    <div class="demo-actions">
+      <Button @click="hideCode" v-if="codeVisible">隐藏代码</Button>
+      <Button @click="showCode" v-else>查看代码</Button>
+    </div>
+    <div v-if="codeVisible" class="demo-code">
+      <pre class="language-html" v-html="html" />
+    </div>
+  </div>
 </template>
 <script lang='ts'>
 import Button from "../lib/Button.vue";
 import "prismjs";
 import "prismjs/themes/prism.css";
-import { computed, ref } from 'vue';
+import { computed, ref } from "vue";
 const Prism = (window as any).Prism;
 
 export default {
-    components:{
-        Button
-    },
-    props:{
-        component:Object
-    },
-    setup(props){
-        const codeVisible=ref<boolean>(false)
-        const html = computed(()=>{
-            return Prism.highlight(props.component.__sourceCode,Prism.languages.html,'html')
-        })
-        const toggleCode = ()=>{
-            codeVisible.value=!codeVisible.value
-        }
-        return{Prism,html,codeVisible,toggleCode}
-    }
+  components: {
+    Button,
+  },
+  props: {
+    component: Object,
+  },
+  setup(props) {
+    const codeVisible = ref<boolean>(false);
+    const html = computed(() => {
+      return Prism.highlight(
+        props.component.__sourceCode,
+        Prism.languages.html,
+        "html"
+      );
+    });
+    const showCode = () => {
+      codeVisible.value = true;
+    };
+    const hideCode = () => {
+      codeVisible.value = false;
+    };
 
-}
+    return { Prism, html, codeVisible, showCode,hideCode };
+  },
+};
 </script>
 
 <style lang="scss" scoped>
