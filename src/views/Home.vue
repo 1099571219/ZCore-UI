@@ -39,6 +39,7 @@ export default {
 $green: #3eaf7c;
 $border-radius: 20px;
 .features {
+  
   > ul {
     display: flex;
     flex-wrap: wrap;
