@@ -1,13 +1,31 @@
 <template>
-  <div class="topnavAndBanner">
-    <Topnav />
-    <div class="banner">
-      <h1>咕噜UI</h1>
-      <h2>一个厉害的 UI 框架</h2>
-      <p class="actions">
-        <a href="https://github.com">GitHub</a>
-        <router-link to="/Doc">开始</router-link>
-      </p>
+  <div>
+    <div class="topnavAndBanner">
+      <Topnav />
+      <div class="banner">
+        <img class="logo" src="public\LOGO.png" alt="" />
+        <h2>ZCore UI 官网</h2>
+        <p class="actions">
+          <a href="https://github.com">GitHub</a>
+          <router-link to="/Doc">开始</router-link>
+        </p>
+      </div>
+    </div>
+    <div class="features">
+      <ul>
+        <li>
+          <h3>基于 Vue 3</h3>
+          <p>使用了 Vue 3 Composition API</p>
+        </li>
+        <li>
+          <h3>基于 TypeScript</h3>
+          <p>源代码采用 TypeScript 书写（非严格检查）</p>
+        </li>
+        <li>
+          <h3>代码易读</h3>
+          <p>每个组件的源代码都十分简洁</p>
+        </li>
+      </ul>
     </div>
   </div>
 </template>
@@ -18,8 +36,43 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-.topnavAndBanner{
-  background: linear-gradient(0deg, rgba(176,226,228,1) 0%, rgba(223,250,251,1) 100%);
+$green: #3eaf7c;
+$border-radius: 20px;
+.features {
+  > ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    > li {
+      width: 400px;
+      margin: 16px 0;
+      display: grid;
+      justify-content: start;
+      align-content: center;
+      grid-template-areas:
+        "icon title"
+        "icon text";
+      grid-template-columns: 80px auto;
+      grid-template-rows: 1fr auto;
+      > svg {
+        grid-area: icon;
+        width: 64px;
+        height: 64px;
+      }
+      > h3 {
+        grid-area: title;
+        font-size: 28px;
+      }
+      > p {
+        grid-area: text;
+      }
+    }
+  }
+}
+.logo {
+  width: 300px;
+}
+.topnavAndBanner {
 }
 .banner {
   padding: 100px 0;
@@ -29,15 +82,18 @@ export default {
   flex-direction: column;
   > .actions {
     padding: 8px 0;
+    margin-top: 10px;
     a {
       margin: 0 8px;
-      background: #fff;
+      background: $green;
+      color: white;
       display: inline-block;
-      $h: 28px;
-      height: $h;
-      line-height: $h;
-      border-radius: calc($h/2);
-      padding: 0 8px;
+      padding: 8px 24px;
+      border-radius: $border-radius;
+      transition: background 250ms;
+      &:hover {
+        background: #4abf8a;
+      }
     }
   }
 }
