@@ -49,6 +49,9 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+.router-link-active{
+  color: #3eaf7c;
+}
 .layout{
     display: flex;
   flex-direction: column;
