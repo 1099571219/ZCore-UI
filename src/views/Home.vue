@@ -3,7 +3,7 @@
     <div class="topnavAndBanner">
       <Topnav />
       <div class="banner">
-        <img class="logo" src="public\LOGO.png" alt="" />
+        <img class="logo" src="\src\assets\img\LOGO.png">
         <h2>ZCore UI 官网</h2>
         <p class="actions">
           <a href="https://github.com">GitHub</a>
