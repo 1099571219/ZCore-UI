@@ -5,6 +5,7 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import 'github-markdown-css'
 import Markdown from './components/Markdown.vue'
+import 'lib-flexible'
 
 const app = createApp(App)
 app.use(router)

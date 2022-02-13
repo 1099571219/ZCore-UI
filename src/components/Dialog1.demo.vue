@@ -1,5 +1,5 @@
 <demo>
-示例1
+常规使用
 </demo>
 <template>
   <Button @click="toggle">toggle</Button>
@@ -10,11 +10,11 @@
     :cancel="f2"
   >
     <template v-slot:title>
-      <strong>加粗的标题</strong>
+      <strong>警告</strong>
     </template>
     <template v-slot:content>
-      <strong>你好</strong>
-      <div>几点了</div>
+      <strong>危险警告</strong>
+      <div>。。。</div>
     </template>
     <div>2</div></Dialog
   >
@@ -31,7 +31,7 @@ export default {
       x.value = !x.value;
     };
     const f1 = () => {
-      return false;
+      return true;//控制点击OK是否自动关闭弹窗
     };
     const f2 = () => {};
    

@@ -1,5 +1,5 @@
 <demo>
-示例4
+支持禁用状态
 </demo>
 <template>
   <div>

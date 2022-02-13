@@ -2,8 +2,8 @@
   <div class="topnav">
     <div class="logo"><router-link to="/">ZCore UI</router-link></div>
     <ul class="menu">
-      <li><router-link to="/Doc">文档</router-link></li>
-      <li><a target="_blank" href="https://github.com/1099571219/newgu">GitHub</a></li>
+      <li><router-link to="/Doc"><h3>文档</h3></router-link></li>
+      <li><a target="_blank" href="https://github.com/1099571219/newgu"><h3>GitHub</h3></a></li>
     </ul>
     <span
       v-if="toggleMenuButtonVisible"

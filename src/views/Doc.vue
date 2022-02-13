@@ -18,16 +18,16 @@
         <h3>组件</h3>
         <ol>
           <li>
-            <router-link to="/doc/switch">Switch 组件</router-link>
+            <router-link to="/doc/switch">Switch -- 开关</router-link>
           </li>
           <li>
-            <router-link to="/doc/button">Button 组件</router-link>
+            <router-link to="/doc/button">Button -- 按钮</router-link>
           </li>
           <li>
-            <router-link to="/doc/dialog">Dialog 组件</router-link>
+            <router-link to="/doc/dialog">Dialog -- 对话框</router-link>
           </li>
           <li>
-            <router-link to="/doc/tabs">Tabs 组件</router-link>
+            <router-link to="/doc/tabs">Tabs -- 标签</router-link>
           </li>
         </ol>
       </aside>
@@ -82,6 +82,7 @@ export default {
 }
 aside {
   background: #ffffff;
+  font-size: 16px;
   width: 150px;
   padding: 16px;
   position: fixed;

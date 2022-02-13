@@ -3,7 +3,7 @@
       <Topnav />
       <div class="banner">
         <img class="logo" src="\src\assets\img\LOGO.png" />
-        <h2>ZCore UI 官网</h2>
+        <h1>ZCore UI 官网</h1>
         <p class="actions">
           <router-link to="/Doc">开始</router-link>
         </p>
@@ -36,17 +36,14 @@ export default {
 $green: #3eaf7c;
 $border-radius: 20px;
 .features {
-  border: 1px solid red;
   width: 100%;
   > ul {
-    border: 1px solid blue;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin: 0 auto;
-
     > li {
-      width: 15rem;
+      width: 5rem;
       margin: 1rem 0.625rem;
       display: grid;
       justify-content: start;
@@ -64,7 +61,7 @@ $border-radius: 20px;
   }
 }
 .logo {
-  width: 18.75rem;
+  width: 9rem;
 }
 .banner {
   padding: 100px 0;
@@ -78,9 +75,10 @@ $border-radius: 20px;
     a {
       margin: 0 8px;
       background: $green;
+      font-size: .5rem;
       color: white;
       display: inline-block;
-      padding: 8px 24px;
+      padding: .25rem 1rem;
       border-radius: $border-radius;
       transition: background 250ms;
       &:hover {

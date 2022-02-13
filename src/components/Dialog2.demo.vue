@@ -1,5 +1,5 @@
 <demo>
-示例2
+常规使用 2
 </demo>
 <template>
   <Button @click="showDialog">toggle</Button>

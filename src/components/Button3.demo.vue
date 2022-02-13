@@ -1,5 +1,5 @@
 <demo>
-示例3
+支持场景
 </demo>
 <template>
   <div>

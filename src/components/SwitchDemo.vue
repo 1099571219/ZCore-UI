@@ -1,5 +1,5 @@
 <template>
-  <h1>Switch 示例</h1>
+  <h1>开关 -- 示例</h1>
   <demo :component="Switch1Demo" />
   <demo :component="Switch2Demo" />
 </template>

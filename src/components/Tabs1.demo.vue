@@ -1,10 +1,12 @@
 <demo>
-示例1
+常规使用
 </demo>
 <template>
   <Tabs v-model:selected="x">
-    <Tab title="导航1">1</Tab>
-    <Tab title="导航2222222">2</Tab>
+    <Tab title="开始">开始</Tab>
+    <Tab title="设置">查看设置</Tab>
+    <Tab title="安全">查看安全</Tab>
+    <Tab title="查看版本">v 0.0.1</Tab>
   </Tabs>
 </template>
 <script lang='ts'>
@@ -14,7 +16,7 @@ import {ref} from 'vue'
 export default {
   components: { Tab, Tabs },
   setup() {
-    const x = ref("导航1");
+    const x = ref("开始");
     return { x };
   },
 };
