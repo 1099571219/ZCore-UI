@@ -14,7 +14,7 @@
     </template>
     <template v-slot:content>
       <strong>危险警告</strong>
-      <div>。。。</div>
+      <div>小心危险</div>
     </template>
     <div>2</div></Dialog
   >
