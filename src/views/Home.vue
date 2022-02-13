@@ -1,12 +1,10 @@
 <template>
   <div>
-    <div class="topnavAndBanner">
       <Topnav />
       <div class="banner">
-        <img class="logo" src="\src\assets\img\LOGO.png">
+        <img class="logo" src="\src\assets\img\LOGO.png" />
         <h2>ZCore UI 官网</h2>
         <p class="actions">
-          <a href="https://github.com">GitHub</a>
           <router-link to="/Doc">开始</router-link>
         </p>
       </div>
@@ -27,7 +25,6 @@
         </li>
       </ul>
     </div>
-  </div>
 </template>
 <script lang="ts">
 import Topnav from "../components/Topnav.vue";
@@ -39,27 +36,23 @@ export default {
 $green: #3eaf7c;
 $border-radius: 20px;
 .features {
-  
+  border: 1px solid red;
+  width: 100%;
   > ul {
+    border: 1px solid blue;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin: 0 auto;
+
     > li {
-      width: 400px;
-      margin: 16px 0;
+      width: 15rem;
+      margin: 1rem 0.625rem;
       display: grid;
       justify-content: start;
-      align-content: center;
       grid-template-areas:
         "icon title"
         "icon text";
-      grid-template-columns: 80px auto;
-      grid-template-rows: 1fr auto;
-      > svg {
-        grid-area: icon;
-        width: 64px;
-        height: 64px;
-      }
       > h3 {
         grid-area: title;
         font-size: 28px;
@@ -71,9 +64,7 @@ $border-radius: 20px;
   }
 }
 .logo {
-  width: 300px;
-}
-.topnavAndBanner {
+  width: 18.75rem;
 }
 .banner {
   padding: 100px 0;

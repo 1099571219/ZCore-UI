@@ -28,8 +28,6 @@ export default {
   min-width: 200px;
   max-width: 980px;
   padding: 45px;
-  margin: 0 auto;
-
 }
 
 @media (max-width: 767px) {

@@ -3,7 +3,7 @@
     <Topnav :toggleMenuButtonVisible="true" class="nav" />
     <div class="content">
       <aside v-if="menuVisible">
-        <h2>文档</h2>
+        <h3>入门</h3>
         <ol>
           <li>
             <router-link  to="/Doc/intro">介绍</router-link>
@@ -15,7 +15,7 @@
             <router-link  to="/Doc/get-started">开始</router-link>
           </li>
         </ol>
-        <h2>组件列表</h2>
+        <h3>组件</h3>
         <ol>
           <li>
             <router-link to="/doc/switch">Switch 组件</router-link>
@@ -51,6 +51,7 @@ export default {
 <style lang="scss" scoped>
 .router-link-active{
   color: #3eaf7c;
+  font-weight: 700;
 }
 .layout{
     display: flex;
@@ -86,7 +87,7 @@ aside {
   position: fixed;
   top: 0;
   left: 0;
-  padding-top: 70px;
+  padding-top: 100px;
   height: 100%;
   z-index: 9;
   border-right: 1px solid #e0e0e0;
