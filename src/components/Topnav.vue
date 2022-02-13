@@ -2,8 +2,14 @@
   <div class="topnav">
     <div class="logo"><router-link to="/">ZCore UI</router-link></div>
     <ul class="menu">
-      <li><router-link to="/Doc"><h3>文档</h3></router-link></li>
-      <li><a target="_blank" href="https://github.com/1099571219/newgu"><h3>GitHub</h3></a></li>
+      <li>
+        <router-link to="/Doc"><h3>文档</h3></router-link>
+      </li>
+      <li>
+        <a target="_blank" href="https://github.com/1099571219/newgu"
+          ><h3>GitHub</h3></a
+        >
+      </li>
     </ul>
     <span
       v-if="toggleMenuButtonVisible"
@@ -53,7 +59,7 @@ export default {
     color: #2c3e50;
     max-width: 6em;
     margin-right: auto;
-    margin-left: 20px;
+    margin-left: 40px;
   }
   > .menu {
     display: flex;
@@ -76,11 +82,10 @@ export default {
     > .menu {
       display: none;
     }
-    > .logo {
-      > .icon {
-        width: 12px;
-        height: 12px;
-      }
+    .icon {
+      vertical-align: center;
+      width: 25px;
+      height: 25px;
     }
     > .toggleAside {
       display: inline-block;
