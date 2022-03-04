@@ -46,9 +46,9 @@ export default {
 $h: 32px;
 $border-color: #d9d9d9;
 $color: #333;
-$blue: #40a9ff;
+$blue: #3eaf7c;
 $radius: 4px;
-$red: red;
+$red: rgb(230, 0, 0);
 $grey: grey;
 .gulu-button {
   box-sizing: border-box;

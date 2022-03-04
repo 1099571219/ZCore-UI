@@ -82,7 +82,7 @@ export default {
 </script>
 
 <style lang="scss" >
-$blue: #40a9ff;
+$blue: #3eaf7c;
 $color: #333;
 $border-color: #d9d9d9;
 .gulu-tabs {

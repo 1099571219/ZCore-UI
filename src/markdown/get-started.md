@@ -4,7 +4,7 @@
 然后在你的代码中写入下面的代码
 
 ```
-import {Switch, Button, Dialog, Tabs} from "zcore-ui"
+import {Switch, Button, Dialog, Tabs} from "zcore-ui-1"
 ```
 
 就可以使用我提供的组件了。
@@ -20,7 +20,7 @@ import {Switch, Button, Dialog, Tabs} from "zcore-ui"
   </div>
 </template>
 <script>
-import {Switch, Button, Dialog, Tabs} from "zcore-ui"
+import {Switch, Button, Dialog, Tabs} from "zcore-ui-1"
 export default {
   components: {Button}
 }
