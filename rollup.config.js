@@ -12,8 +12,8 @@ export default {
     globals: {
       vue: 'Vue'
     },
-    name: 'Gulu',
-    file: 'dist/lib/gulu.js',
+    name: 'Zcore-ui-1',
+    file: 'dist/lib/zcore-ui-1.js',
     format: 'umd',
     plugins: [terser()]
   },

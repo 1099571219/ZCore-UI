@@ -8,6 +8,6 @@ export { default as Card } from './Card.vue';
 export { default as Popover } from './Popover.vue';
 export { default as Toast } from './Toast.vue';
 export { default as Input } from './Input.vue';
-export { ToastConfig } from './toastConfig';
+// export { ToastConfig } from './toastConfig';
 
 
