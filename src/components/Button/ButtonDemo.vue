@@ -1,5 +1,5 @@
 <template>
-  <h1>按钮 -- 示例</h1>
+  <h1>Button -- 示例</h1>
   <demo :component="Button1Demo"/>
   <demo :component="Button2Demo"/>
   <demo :component="Button3Demo"/>
@@ -12,7 +12,7 @@ import Button2Demo from "./Button2.demo.vue";
 import Button3Demo from "./Button3.demo.vue";
 import Button4Demo from "./Button4.demo.vue";
 import Button5Demo from "./Button5.demo.vue";
-import Demo from './Demo.vue';
+import Demo from '../Demo.vue';
 export default {
   components: {
     Demo,

@@ -65,7 +65,8 @@ $border-radius: 20px;
   }
 }
 .logo {
-  width: 9rem;
+  margin: 2rem;
+  width: 7rem;
 }
 .banner {
   padding: 50px 0;

@@ -29,6 +29,18 @@
           <li>
             <router-link to="/doc/tabs">Tabs -- 标签</router-link>
           </li>
+          <li>
+            <router-link to="/doc/card">Card -- 卡片</router-link>
+          </li>
+          <li>
+            <router-link to="/doc/input">Input -- 输入框</router-link>
+          </li>
+          <li>
+            <router-link to="/doc/popover">Popover -- 弹出提示</router-link>
+          </li>
+          <li>
+            <router-link to="/doc/toast">Toast -- 提示</router-link>
+          </li>
         </ol>
       </aside>
       <main>

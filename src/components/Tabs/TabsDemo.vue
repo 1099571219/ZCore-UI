@@ -3,7 +3,7 @@
   <Demo :component="Tabs1Demo" />
 </template>
 <script lang='ts'>
-import Demo from "./Demo.vue";
+import Demo from "../Demo.vue";
 import Tabs1Demo from "./Tabs1.demo.vue";
 
 export default {

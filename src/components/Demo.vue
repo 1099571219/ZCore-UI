@@ -28,6 +28,7 @@ export default {
     component: Object,
   },
   setup(props) {
+    console.log(props);
     const codeVisible = ref<boolean>(false);
     const html = computed(() => {
       return Prism.highlight(
@@ -43,7 +44,7 @@ export default {
       codeVisible.value = false;
     };
 
-    return { Prism, html, codeVisible, showCode,hideCode };
+    return { Prism, html, codeVisible, showCode, hideCode };
   },
 };
 </script>
@@ -75,5 +76,4 @@ $border-color: #d9d9d9;
     }
   }
 }
-
 </style>

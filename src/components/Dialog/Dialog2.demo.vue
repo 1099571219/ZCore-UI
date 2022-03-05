@@ -5,8 +5,8 @@
   <Button @click="showDialog">toggle</Button>
 </template>
 <script>
-import { openDialog } from "../lib/openDialog";
-import Button from "../lib/Button.vue";
+import { openDialog } from "../../lib/openDialog";
+import Button from "../../lib/Button.vue";
 export default {
     components:{
         Button
