@@ -18,16 +18,7 @@
         <h3>组件</h3>
         <ol>
           <li>
-            <router-link to="/doc/switch">Switch -- 开关</router-link>
-          </li>
-          <li>
             <router-link to="/doc/button">Button -- 按钮</router-link>
-          </li>
-          <li>
-            <router-link to="/doc/dialog">Dialog -- 对话框</router-link>
-          </li>
-          <li>
-            <router-link to="/doc/tabs">Tabs -- 标签</router-link>
           </li>
           <li>
             <router-link to="/doc/card">Card -- 卡片</router-link>
@@ -40,6 +31,15 @@
           </li>
           <li>
             <router-link to="/doc/toast">Toast -- 提示</router-link>
+          </li>
+          <li>
+            <router-link to="/doc/switch">Switch -- 开关</router-link>
+          </li>
+          <li>
+            <router-link to="/doc/dialog">Dialog -- 对话框</router-link>
+          </li>
+          <li>
+            <router-link to="/doc/tabs">Tabs -- 标签</router-link>
           </li>
         </ol>
       </aside>
