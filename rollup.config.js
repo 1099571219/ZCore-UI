@@ -8,7 +8,7 @@ import { terser } from "rollup-plugin-terser"
 
 export default {
   input: 'src/lib/index.ts',
-  output: {
+  output: [{
     globals: {
       vue: 'Vue'
     },
@@ -16,7 +16,12 @@ export default {
     file: 'dist/lib/zcore-ui-1.js',
     format: 'umd',
     plugins: [terser()]
-  },
+  }, {
+    name: 'Zcore-ui-1',
+    file: 'dist/lib/zcore-ui-1.esm.js',
+    format: 'es',
+    plugins: [terser()]
+  }],
   plugins: [
     scss({ include: /\.scss$/, sass: dartSass }),
     esbuild({
